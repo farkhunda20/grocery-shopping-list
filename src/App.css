@@ -1,38 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+/* General App Container */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Title */
+.title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Container */
+.container {
+  margin: 0 auto;
+
+  padding: 20px;
+
+  border-radius: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Input Field */
+.input {
+  width: calc(100% - 80px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.addBtn,
+.clearAllBtn,
+.delete_btn,
+.edit_btn {
+  padding: 10px 15px;
+  margin: 5px 0;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.addBtn:hover,
+.clearAllBtn:hover,
+.delete_btn:hover {
+  background-color: #0056b3;
+}
+
+/* List */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+/* Delete Button */
+.delete_btn {
+  padding: 5px 10px;
+  background-color: #dc3545;
+}
+.edit_btn {
+  padding: 5px 10px;
+  background-color: rgb(173, 163, 163);
+  margin-right: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit_btn:hover {
+  background-color: rgb(135, 125, 125);
+}
+.delete_btn:hover {
+  background-color: #c82333;
+}
+
+/* Clear List Button */
+.clearAllBtn {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #28a745;
+}
+
+.clearAllBtn:hover {
+  background-color: #218838;
 }
